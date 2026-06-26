@@ -1,1 +1,1 @@
-console.log('v0.4.0 loaded');
+console.log('Gallery loaded');
