@@ -1,1 +1,1 @@
-document.querySelectorAll('.card').forEach(c=>c.onclick=()=>c.classList.toggle('active'));
+console.log('v0.4.0 loaded');
