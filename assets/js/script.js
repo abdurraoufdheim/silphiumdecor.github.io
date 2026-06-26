@@ -1,1 +1,1 @@
-console.log('loaded');
+console.log('Silphium Decor v0.2 loaded');
