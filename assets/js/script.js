@@ -1,1 +1,1 @@
-document.querySelectorAll('.card').forEach(c=>c.onmouseenter=()=>c.style.transform='translateY(-6px)');document.querySelectorAll('.card').forEach(c=>c.onmouseleave=()=>c.style.transform='translateY(0)');
+document.querySelectorAll('.card').forEach(c=>{c.addEventListener('mouseenter',()=>c.style.boxShadow='0 10px 25px rgba(212,175,55,.35)');c.addEventListener('mouseleave',()=>c.style.boxShadow='none');});
