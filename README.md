@@ -1,1 +1,1 @@
-Starter website
+Silphium Decor v0.2 starter. Copy your images into assets/images and replace placeholder content in future versions.
