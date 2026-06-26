@@ -1,1 +1,1 @@
-console.log('Silphium Decor v0.2 loaded');
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('mouseover',()=>a.style.color='#d4af37'));
