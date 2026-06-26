@@ -1,31 +1,30 @@
 /* Silphium Decor Styles */
+/* ===== Top Bar ===== */
+
 .top-bar{
-    background: #4C7A3F;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 30px;
-    font-size: 14px;
+    background:#1a1a1a;
+    color:#ffffff;
+    font-size:14px;
+    padding:10px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.top-bar-left,
+.top-bar-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
 }
 
 .top-bar a{
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
-    transition: 0.3s;
+    color:#ffffff;
+    text-decoration:none;
+    transition:0.3s;
 }
 
 .top-bar a:hover{
-    color: #B68D40;
-}
-
-.top-bar-left{
-    font-weight: 500;
-}
-
-.top-bar-right{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    color:#c9a227;
 }
