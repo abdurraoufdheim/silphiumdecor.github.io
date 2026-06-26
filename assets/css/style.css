@@ -1,0 +1,112 @@
+/* Silphium Decor - style.css */
+:root{
+  --primary:#C9A227;
+  --primary-light:#E0C562;
+  --bg:#121317;
+  --surface:#1B1D22;
+  --text:#F5F4EF;
+  --muted:#CFCFCF;
+  --radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#222;background:#fff;line-height:1.6}
+img{max-width:100%;display:block}
+a{text-decoration:none}
+
+/* Top Bar */
+.top-bar{
+background:var(--bg);
+padding:10px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:10px;
+border-bottom:1px solid rgba(201,162,39,.25)
+}
+.top-bar-left,.top-bar-right{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.top-bar a{color:var(--primary-light);font-size:14px}
+
+/* Header */
+.navbar{
+background:var(--surface);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px 5%;
+position:sticky;
+top:0;
+z-index:999;
+}
+.logo img{height:46px}
+.menu-toggle{background:none;border:none;color:var(--primary);font-size:30px;cursor:pointer}
+.nav-menu{display:none;position:absolute;top:100%;left:0;width:100%;background:var(--surface)}
+.nav-menu.active{display:block}
+.nav-menu ul{list-style:none}
+.nav-menu li{border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-menu a{display:block;padding:16px 20px;color:var(--text)}
+.shop-btn{background:var(--primary);color:#121317!important;font-weight:bold;border-radius:30px;padding:12px 24px!important;margin:12px}
+
+/* Hero */
+.hero{
+min-height:100vh;
+background:linear-gradient(rgba(18,19,23,.55),rgba(18,19,23,.55)),url("../images/hero/hero.jpg") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:60px 20px;
+}
+.hero-content{max-width:760px}
+.hero-subtitle{color:var(--primary-light);letter-spacing:3px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.5rem);color:#fff;margin:20px 0}
+.hero p{color:#f2f2f2;margin-bottom:30px}
+.hero-buttons{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
+.hero-btn,.hero-btn-outline{padding:15px 30px;border-radius:30px;font-weight:bold}
+.hero-btn{background:var(--primary);color:#121317}
+.hero-btn-outline{border:2px solid var(--primary);color:#fff}
+
+/* Sections */
+section{padding:80px 5%}
+.section-title{text-align:center;margin-bottom:40px}
+.section-title h2{font-size:2.2rem;margin-bottom:10px}
+
+.collection-grid,.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px
+}
+.collection-card,.feature{
+background:#fff;
+border-radius:var(--radius);
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,.08)
+}
+.collection-card img{height:240px;width:100%;object-fit:cover}
+.collection-card h3,.feature h3{padding:20px}
+.feature p{padding:0 20px 20px;color:#555}
+
+.cta{
+background:var(--bg);
+color:#fff;
+text-align:center
+}
+.cta h2{margin-bottom:25px}
+
+footer{
+background:#0d0e10;
+color:#aaa;
+text-align:center;
+padding:50px 20px
+}
+footer img{height:55px;margin:0 auto 15px}
+
+@media(min-width:992px){
+.menu-toggle{display:none}
+.nav-menu{display:block;position:static;width:auto;background:none}
+.nav-menu ul{display:flex;gap:28px;align-items:center}
+.nav-menu li{border:none}
+.nav-menu a{padding:0}
+.shop-btn{margin:0}
+}
