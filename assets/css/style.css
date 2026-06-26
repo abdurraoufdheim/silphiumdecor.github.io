@@ -1,1 +1,7 @@
-body{font-family:Arial;margin:0;background:#111;color:#fff}header{padding:20px;background:#000;color:#d4af37;text-align:center}main{padding:40px;text-align:center}a{color:#d4af37}
+body{margin:0;font-family:Arial,sans-serif;background:#111;color:#fff}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px;background:#000}
+nav a{color:#d4af37;text-decoration:none;margin:0 10px}
+.hero{padding:100px 20px;text-align:center;background:#1b1b1b}
+h1,h2{color:#d4af37}
+.btn{display:inline-block;padding:12px 24px;background:#d4af37;color:#111;text-decoration:none;border-radius:30px}
+footer{padding:30px;text-align:center;background:#000}
