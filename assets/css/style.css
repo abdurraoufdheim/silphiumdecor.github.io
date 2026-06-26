@@ -1,15 +1,16 @@
 /* Silphium Decor Styles */
 /* ===== Top Bar ===== */
+/* ===== Top Bar ===== */
 
 .top-bar{
-    background:#1a1a1a;
-    color:#ffffff;
-    font-size:14px;
+    background:#1B1B1B;
+    color:#F5F5F5;
     padding:10px 5%;
     display:flex;
     justify-content:space-between;
     align-items:center;
     flex-wrap:wrap;
+    font-size:14px;
 }
 
 .top-bar-left,
@@ -20,11 +21,11 @@
 }
 
 .top-bar a{
-    color:#ffffff;
+    color:#C9A227;
     text-decoration:none;
     transition:0.3s;
 }
 
 .top-bar a:hover{
-    color:#c9a227;
+    color:#D8B44A;
 }
